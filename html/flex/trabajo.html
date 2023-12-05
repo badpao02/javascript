@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+        border: 1px solid rgb(42, 161, 161);
+        background-color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        width: 250px;
+        /*height: 120px;*/
+        line-height: 50px;
+        text-align: center;
+        margin: 5px;
+    }
+    h1{
+        background-color: black;
+        color: white;
+        
+    }
+    .abajo{
+        background-color: gray;
+    }
+
+    .contenedor{
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-flow: row wrap; /* esto hace que combina flex direction y flex wrap*/ 
+        justify-content: flex-start; 
+        height: 600px;
+        align-content: center;}
+
+
+    </style>
+</head>
+<body>
+    <section class="contenedor">
+        <div class="item"><div><h1>Tarjeta izquierda</h1></div>
+            <p>contenido del cuerpo</p>
+        <p>contenido del cuerpo</p>
+    <p>contenido del cuerpo</p>
+<div><p class="abajo">pie</p></div></div>
+<div class="item"><div><h1>Tarjeta centro</h1></div>
+<p>contenido del cuerpo</p>
+<p></p>
+<p></p>
+<div><p class="abajo">pie</p></div></div>
+<div class="item"><div><h1>Tarjeta derecha</h1></div>
+<p>contenido del cuerpo</p>
+<div><p class="abajo">pie</p></div></div>
+        </section>
+    
+</body>
+</html>
+
+

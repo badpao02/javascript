@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <style>
+ footer {
+            padding: 50px 0px;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        .enlace {
+            text-align: center;
+            margin-bottom: 20px; /* Agrega espacio entre los íconos y el formulario */
+            margin-right: 20px; /* Agrega espacio a la derecha de cada contenedor */ 
+        }
+
+
+        .enlace h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .enlace img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease; /* Agrega una transición suave al seleccionar */
+        }
+
+        .enlace img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño al seleccionar */
+        }
+
+        .enlace form {
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: auto; /* Centra el formulario horizontalmente */
+}
+
+.enlace form label,
+.enlace form input,
+.enlace form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.enlace form .btn-3 {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enlace form .btn-3:hover {
+    background-color: #258cd1;
+}
+
+        .horario {
+            margin-top: 20px;
+            margin-bottom: 20px; /* Agrega espacio en la parte inferior de la sección de horario */
+        }
+
+        .horario h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .horario p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+            background-color: whitesmoke;
+            color: black;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="enlace">
+            <h3>DEJANOS UN MENSAJE, CON GUSTO ATENDEREMOS
+                TUS INQUIETUDES
+            </h3>
+            <form action="/procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="telefono">telefono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar" class="btn-3">
+            </form>
+        </div>
+
+
+<div class="ft-container">
+    <div class="enlace">
+        <h3>Siguenos en Nuestras Redes</h3>
+        <img src="/html/proyecto/imgs/facebook.png" alt="facebook">
+        <img src="/html/proyecto/imgs/gorjeo.png" alt="twitter">
+        <img src="/html/proyecto/imgs/logotipo-de-linkedin.png" alt="linkedin">
+        <img src="/html/proyecto/imgs/llamada-telefonica.png" alt="whatsapp">
+    </div>
+
+    <div class="horario">
+        <h3>Horario de Atención</h3>
+        <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+        <p>Sábado: 9:00 AM - 1:00 PM</p>
+        <p>Domingo: Cerrado</p>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2023 Todos los derechos reservados - TuAbogadoCelis</p>
+    </div>
+</div>
+
+</footer>
+
+    
+</body>
+</html>
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+  
+    .item{
+        border: 1px solid rgb(42, 161, 161);
+        background-color: lightseagreen;
+        font-family: sans-serif;
+        font-weight: bold;
+        width: 90px;
+        /*height: 120px;*/
+        line-height: 50px;
+        text-align: center;
+        margin: 5px;
+    }
+    .items{
+        border: 1px solid rgb(42, 161, 161);
+        background-color: lightseagreen;
+        font-family: sans-serif;
+        font-weight: bold;
+        width: 90px;
+        /*height: 120px;*/
+        line-height: 50px;
+        text-align: center;
+        margin: 5px;
+    }
+    
+    .itemses{
+    
+        border: 1px solid rgb(127, 250, 250);
+        background-color: lightseagreen;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        width: 600px;
+        /*height: 120px;*/
+        line-height: 100px;
+        text-align: center;
+        margin: 5px;
+        
+        
+    
+    }
+    .contenedor{
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+        padding: 20px;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-flow: row wrap; /* esto hace que combina flex direction y flex wrap*/ 
+        justify-content: flex-start; 
+        height: 100px;
+        align-content: center;}
+        
+        
+        .contenedores{
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+        padding: 20px;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-flow: column ; /* esto hace que combina flex direction y flex wrap*/ 
+        justify-content: flex-start; 
+        height: 300px;
+        align-content: center;}
+        
+        .contenedores1{
+        background-color: white;
+        border: 1px solid black;
+        padding: 20px;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-flow: row; /* esto hace que combina flex direction y flex wrap*/ 
+        justify-content: space-between; 
+        height: 480px;
+    }
+    </style>
+       
+</head>
+<body>
+    <section class="contenedor">
+    <div class="item">Home</div>
+    <div class="item">Servicios</div>
+    <div class="item">Opciones</div>
+    <div class="item">Planes</div>
+    <div class="item">Contacto</div></section>
+        
+        
+    <section class="contenedores">
+        <div class="items">Home</div>
+        <div class="items">Servicios</div>
+        <div class="items">Opciones</div>
+        <div class="items">Planes</div>
+        <div class="items">Contacto</div></section>
+
+    
+            <section class="contenedores1">
+                <div class="itemses">solo tengo una linea</p></div>
+                <div class="itemses">Este texto ocupa algo mas que el de al lado Son dos lineas</div>
+                <div class="itemses">este es mas largo que los otros dos y ocupa mas lineas pero todos estos bloques tienen la misma altura y anchura, crecen o se contraen para repartirse en ancho disponible</div>
+                </section>
+        
+</body>
+
+</html>

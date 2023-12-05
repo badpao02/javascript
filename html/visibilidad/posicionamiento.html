@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 2rem;
+            font-size: 2rem;
+            font-family: sans-serif;
+            background-color: black;
+            height: 2500px;
+        }
+        h1{
+            color:aliceblue;
+            font-size: 3rem;
+            text-align: center;
+        }
+        div{
+            border-radius:  5px;
+            background-color: gray;
+            border: 1px solid green
+        }
+        .static{
+            background-color: wheat
+            ;
+        }
+        .relative{
+            background-color: purple;
+        }
+        .absolute{
+            background-color: brown;
+
+        }
+        .fixed{
+            background-color: plum;
+
+        }
+        .sticky{
+            background-color: aqua;
+        }
+        /*Css position*/
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+            left: 50px;
+            top: 5px;
+            right: 20px /*esto mueve el contenedor solo si no existe left mientras exista left no hace ningun movimiento*/
+            
+        }
+
+        .parent{
+            position: relative;
+        }
+        .absolute{
+            position: absolute;
+            top: 10px;
+        }
+        .fixed{
+            position: fixed;
+            top:10%;
+            right: 20px;
+        }
+        .sticky{
+            position: sticky;
+            top: 0px
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CSS position</h1>
+    <div class="parent">
+        <div class="static">static</div>
+        <div class="relative">relative</div>
+        <div class="absolute">absolute</div>
+        <div class="fixed">fixed</div>
+        <div class="sticky">sticky</div>
+        <div class="static">static</div>
+        <div class="static">static</div>
+        <div class="static">static</div>
+        <div class="static">static</div>
+        <div class="static">static</div>
+        <div class="static">static</div>
+        <div class="static">static</div>
+    </div>
+    
+</body>
+</html>

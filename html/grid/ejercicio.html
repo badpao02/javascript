@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        .grid-item1{
+            background-color: orange;
+            padding: 50px;
+            height: 50px;
+        }
+        .grid-item2{
+            background-color: lightseagreen;
+            padding: 50px;
+            height: 50px;
+        }
+        .grid-item3{
+            background-color: darkred;
+            padding: 50px;
+            height: 50px;
+        }
+
+        .container{
+            padding: 10px;
+            margin:  0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 20% auto 30%;
+            width: 600px;
+            height: 500px;
+            column-gap: 20px;
+            row-gap: 10px;
+            gap:20px; 
+
+        }
+
+        .grid-items1{
+            background-color: orangered;
+            padding: 40px;
+            height: 50px;
+        }
+        .grid-items2{
+            background-color: orangered;
+            padding: 50px;
+            height: 50px;
+        }
+        .grid-items3{
+            background-color: orangered;
+            padding: 50px;
+            height: 50px;
+        }
+        .grid-items4{
+            background-color: lightseagreen;
+            padding: 50px;
+            height: 50px;
+        }
+        .grid-items5{
+            background-color: darkred;
+            padding: 50px;
+            height: 50px;
+        }
+        .grid-items6{
+            background-color: darkred;
+            padding: 50px;
+            height: 50px;
+        }
+
+        .containeres{
+            display: grid;
+            padding: 10px;
+            margin:  0 auto;
+            grid-template-columns: auto auto auto ;
+            grid-template-rows: 30% auto 30%;
+            width: 500px;
+            height: 500px;
+            column-gap: 20px;
+            row-gap: 10px;
+            gap:20px; 
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item1"></div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"></div>
+    </div>
+
+    <div class="containeres">
+        <div class="grid-items1"></div>
+        <div class="grid-items2"></div>
+        <div class="grid-items3"></div>
+        <div class="grid-items4"></div>
+        <div class="grid-items5"></div>
+        <div class="grid-items6"></div>
+
+    </div>
+
+
+    
+</body>
+</html>

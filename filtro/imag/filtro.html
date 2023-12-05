@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+           
+    header{
+        background-color: whitesmoke;
+        
+    }
+   
+    .header1{
+        
+        background-image: linear-gradient(rgba(0,0,0.5),rgba(0,0,0,0.5)), url(imagenes/imgs/enium-fondo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+    .navbar ul li a {
+        font-size: 18px;
+        display: inline-block;
+        padding: 20px;
+        color: rgb(24, 21, 17) ;
+        padding: 0px 20px;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-decoration: none;
+        
+    }
+
+    .navbar ul li a:hover{
+        color:#5E5D6E;
+        text-decoration: none;
+        }
+        
+        
+
+        section
+        {
+            text-align: center;
+            height: 300px;
+        }
+   
+   
+        .btn-1 {
+    display: inline-block;
+    background-color: black;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 35px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn-1:hover {
+    background-color: gray;
+    color: black; 
+    text-decoration: none;
+}
+main{
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    height: 400px;
+    
+    }
+
+.group {
+    display: flex;
+}
+
+
+
+.group-services {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+    .service img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.ft-container .enlace{
+    background-color: black;
+    height: 100px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto;
+    }
+    
+    
+    .menu-icono {
+        font-size: 30px;
+    }
+
+    .menu .navbar {
+        
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+       
+        text-align: center;
+            }
+            
+    .btn-1 {
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    .services h2 {
+        font-size: 40px;
+    }
+
+    .txt-1 {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .group{
+        flex-direction: column;
+    }
+
+    .group-services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .menu .logo {
+        font-size: 30px;
+    }
+
+    .menu-icono {
+        font-size: 40px;
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .menu .navbar ul {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-text {
+        width: 70%;
+        font-size: 22px;
+    }
+
+    .header-text p {
+        margin-top: 50px;
+    }
+
+    .btn-1 {
+        padding: 15px 30px;
+        margin-top: 30px;
+    }
+
+    .services {
+        font-size: 50px;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 1025px) {
+    
+    .menu-icono {
+        font-size: 45px;
+    }
+
+    .menu .navbar ul {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .header-text .menu-icono {
+        width: 900px;
+        margin-top: 150px;
+    }
+
+    .header-text p {
+        margin-top: 65px;
+    }
+
+    .btn-1 {
+        padding: 15px 25px;
+        margin-top: 35px;
+    }
+}
+
+
+</style>
+<body>
+
+    <header>
+        <header class="header">
+                <img class="menu-icono" src="imagenes/imgs/ENIUN_Logo_Header.png" alt="logo">
+                <nav class="navbar">
+                
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+        
+                </ul>
+            </nav>
+            </header>
+            <header1 class="header1">
+                <img class="fondo" src="imagenes/imgs/ENIUNLogotipo.png" alt="logo">
+            </header1>
+            
+            <section>
+                <h1>
+                    This is a call to Action element
+                </h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet necessitatibus alias dolorem est assumenda quo ullam laboriosam, ab natus vero, fuga iste aut reiciendis dignissimos, fugiat cumque incidunt officiis illo.
+                </p>
+                <a href="#" class="btn-1"><h3>Call to action</h3></a>
+       </div>
+            </section>
+            <main>
+                <h1>
+                    This is an info-box
+                </h1>
+                           
+            <div class="group">
+            <div class="service1">
+                <img src="#" alt="estrella">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fuga accusamus delectus assumenda repellat dolore suscipit magni eum nemo, reiciendis esse saepe eligendi. Placeat atque consequatur nostrum. Voluptate, voluptatibus eligendi.</p>
+            </div>
+            <div class="service1">
+                <img src="#" alt="estrella">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum, laboriosam necessitatibus molestias rem illum sequi sapiente praesentium facere quibusdam, perferendis esse enim voluptate pariatur dolor? Sit amet earum neque!</p>
+            </div>
+            <div class="service1">
+                    <img src="#" alt="estrella">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, obcaecati! Error, nihil dignissimos. Eum, maiores sed, molestias sit dolorum quas obcaecati aspernatur voluptates cupiditate iure, optio unde quaerat voluptatibus natus.</p>
+            </div>
+        </div>
+
+            </main>
+
+            <footer class="services container" id="article">
+
+                <h2>Article</h2>
+        
+                <div class="group-services">
+                    <div class="service">
+                        
+                        <img src="imagenes/imgs/img_article_1.png" alt="nave">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto recusandae eaque, reprehenderit vero ex fugit. Cum distinctio dolorem, autem ullam placeat iure. Voluptas ab suscipit facere unde officiis iusto!</p>      
+                    </div>
+        
+                    <div class="service">
+                        
+                        <img src="imagenes/imgs/img_article_2.png" alt="cohete">    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tenetur, autem blanditiis placeat rerum ipsam, in nostrum possimus hic deleniti qui nihil dolorum ipsa veniam voluptas fugiat velit nisi iure?</p>
+                    </div>
+ 
+            </footer>
+            <div class="ft-container">
+                <div class="enlace">
+                    
+                    <img src="#" alt="facebook">
+                    <img src="#" alt="twitter">
+                    <img src="#" alt="pinterest">
+                </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios selectores</title>
+    <style>
+        .elemento::before{
+            content: url(flecha_inactiva.png);
+        }
+        .elemento:hover::before{
+            content: url(flecha_activa.png);
+        }
+        .elemento:hover{
+            background-color: #e4e4e4;
+        }
+        .container{
+            width: 200px;
+            border: 1px solid blue;
+        }
+        .elemento{
+            padding: 10px;
+            border: 1px solid gray;
+            background-color: #b48181;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="elemento">
+            <a href="###">Elemento 1</a>
+        </div>
+        <div class="elemento">
+            <a href="###">Elemento 2</a>
+        </div>
+        <div class="elemento">
+            <a href="###">Elemento 3</a>
+        </div>
+        <div class="elemento">
+            <a href="###">Elemento 4</a>
+        </div>
+        <div class="elemento">
+            <a href="###">Elemento 5</a>
+        </div>
+        <div class="elemento">
+            <a href="###">Elemento 6</a>
+        </div>
+    </div>
+</body>
+</html>

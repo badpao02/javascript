@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>tuabogadocelis</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+            text-decoration: none;
+            
+
+        }
+    
+
+    body{
+        background-color: bisque;
+        
+
+    }
+    
+    header{
+        background-image: linear-gradient(rgba(0,0,0.5),rgba(0,0,0,0.5)), url(/html/proyecto/imgs/estado-de-derecho-e1549026224399.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+  
+    }
+
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .menu{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right:0;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1500;
+    }
+    .menu .logo{
+        font-weight: bolder;
+        font-size: 35px;
+        color: rgba(186, 158, 89, 0.663);
+        
+    }
+    .menu-icono{
+        font-size: 45px;
+        max-width: 40%;
+        height: 40%;
+
+    }
+    .menu .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+    }
+  
+    .menu.navbar ul li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: wheat ;
+        display: block;
+    }
+
+    .menu .navbar ul li a:hover{
+        color:rgb(197, 153, 238);
+        text-decoration: none;
+        
+
+    }
+
+    #menu{
+        display: none;
+
+    }
+
+    .menu label{
+        cursor: pointer;
+        display: none;
+
+    }
+    .header-text{
+        text-align: center;
+        width: 900px;
+        font-size: 25px;
+    }
+    .header-text .menu-icono{
+        justify-content: center;
+        width: 900px;
+        margin-top: 150px;
+
+    }
+ 
+    .header-text p{
+        margin-top: 65px;
+        color:rgb(196, 174, 132);
+    }
+    .btn-1{
+        display: inline-block;
+        background-color: rgb(174, 139, 96);
+        margin-top: 35px;
+        padding: 15px 25px;
+        border-radius: 35px;
+        color:black
+    }
+
+    .btn-1 :hover{
+        background-color: burlywood;
+    }
+
+    .services {
+    padding: 50px 0px;
+    text-align: center;
+    color: black;
+}
+
+    .services h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+    .txt-1 {
+    font-size: 30px;
+    padding: 30px 200px;
+}
+
+    .group-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .service {
+    width: calc(25% - 20px); /* Ajuste el ancho según tus necesidades */
+    border: 6px solid rgb(189, 165, 105); /* Color del borde entre servicios */
+    
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta cualquier cosa que se salga del contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Aplica un efecto de sombra y transformación al pasar el ratón sobre el servicio */
+    .service:hover {
+    transform: scale(1.05); /* Hace que el servicio sea un poco más grande */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+}
+
+    .service img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+    .portafolio-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url(/html/proyecto/imgs/lawyers-mediating-disputes-providing-legal-600nw-2183258471.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    color: rgb(0, 0, 0);
+}
+
+.portafolio-txt {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portafolio-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+    color:  rgb(165, 150, 113); /* Cambié el color del texto a blanco para que sea más legible */
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 30px; /* Añadí bordes redondeados a la imagen */
+    box-shadow: 0 0 20px rgba(29, 24, 24, 0.3); /* Agregué una suave sombra a la imagen */
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco para el texto */
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: -40px; /* Ajusté el margen superior para superponer ligeramente el texto sobre la imagen */
+}
+
+.mission-container,
+.vision-container,
+.specialty-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco para los contenedores de texto */
+    padding: 20px;
+    margin-top: 20px; /* Añadí un margen superior entre los bloques de texto */
+    border-radius: 10px;
+}
+
+.mission-container h3,
+.vision-container h3,
+.specialty-container h3 {
+    font-size: 30px; /* Tamaño de fuente más grande para los encabezados de sección */
+    color: rgb(165, 150, 113); /* Color similar al texto principal */
+}
+
+.mission-container p,
+.vision-container p,
+.specialty-container p {
+    font-size: 18px;
+    color: #333; /* Texto oscuro para mayor contraste */
+}
+
+    footer {
+            padding: 50px 0px;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        .enlace {
+            text-align: center;
+            margin-bottom: 20px; /* Agrega espacio entre los íconos y el formulario */
+            margin-right: 20px; /* Agrega espacio a la derecha de cada contenedor */ 
+        }
+
+
+        .enlace h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .enlace img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease; /* Agrega una transición suave al seleccionar */
+        }
+
+        .enlace img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño al seleccionar */
+        }
+
+        .enlace form {
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: auto; /* Centra el formulario horizontalmente */
+}
+
+.enlace form label,
+.enlace form input,
+.enlace form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.enlace form .btn-3 {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enlace form .btn-3:hover {
+    background-color: #258cd1;
+}
+
+        .horario {
+            margin-top: 20px;
+            margin-bottom: 20px; /* Agrega espacio en la parte inferior de la sección de horario */
+        }
+
+        .horario h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .horario p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+            background-color: whitesmoke;
+            color: black;
+            font-size: 14px;
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="menu container">
+            <p class="logo">Menu</p>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img class="menu-icono" src="/html/proyecto/imgs/casa.png" alt="menu">
+            </label>
+            <nav class="navbar">
+                
+                <ul>
+                    <li><a href="/html/proyecto/proyecto.html">Inicio</a></li>
+                    <li><a href="/html/proyecto/subpagina1.html">Servicios</a></li>
+                    <li><a href="/html/proyecto/proyecto.html">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-text" id="Inicio">
+            <img class="menu-icono" src="/html/proyecto/imgs/image.png" alt="logo">
+            <p>Somos una firma jurídica especializada en asesorias legales, con un importante reconocimiento y prestigio a nivel nacional, que incluye en su portafolio asuntos en Derecho Corporativo y Empresarial, Protección al Patrimonio Económico Individual y Colectivo, Gestión Especializada en Cartera y Defensa Jurídica en Asuntos de Alto Impacto; con sede principal en la ciudad de Bucaramanga y sus alrededores.
+
+            </p>
+            <a href="#" class="btn-1"><h3>Contacta Con Nosotros</h3></a>
+       </div>
+    </header>
+
+    <main class="services container" id="servicios">
+
+        <h2>Nuestros Servicios</h2>
+        <p class="txt-1">Tenemos mucha experiencia, somos reflexivos en nuestro papel como defensores y estamos comprometidos a responder a lo que nuestros clientes necesitan y exigen.
+
+        </p>
+        <div class="group-services">
+            <div class="service">
+                <h3>Derecho civil</h3>
+                <img src="/html/proyecto/imgs/derecho-civil.png" alt="derechocivil">
+                <p> Se ocupa de las relaciones entre personas y entidades privadas, como individuos, empresas y organizaciones. </p>
+            </div>
+            <div class="service">
+                <h3>Derecho de Familia</h3>
+                <img src="/html/proyecto/imgs/familia.png" alt="familia">
+                <p> enfoque especial en la protección de los derechos fundamentales de sus miembros y busca solucionar conflictos de una manera justa y equitativa, considerando siempre el interés superior de los niños y el bienestar de la familia en su conjunto.</p>
+            </div>
+            <div class="service">
+                <h3>Derecho de propiedad</h3>
+                <img src="/html/proyecto/imgs/propiedad.png" alt="propiedad">
+                <p>se ocupa de los derechos y responsabilidades relacionados con la posesión y el uso de bienes y propiedades. Esto incluye la compra, venta y transferencia de propiedades, así como los derechos de arrendamiento y usufructo.</p>
+            </div>
+            <div class="service">
+                <h3>Derecho penal</h3>
+                <img src="/html/proyecto/imgs/ley.png" alt="ley">
+                <p>mantener el orden público, proteger a los ciudadanos y aplicar medidas punitivas a aquellos que infringen las leyes penales.</p>
+            </div>
+        </div>
+    </main>
+    <section class="portafolio-container" id="nosotros">
+
+        <div class="portafolio-txt">
+            <h2>Sobre Nosotros</h2>
+            
+            <div class="img-container">
+                <img src="/html/proyecto/imgs/lawyers-mediating-disputes-providing-legal-600nw-2183258471.webp" alt="abogados">
+            </div>
+            
+            <div class="text-container">
+                <p>
+                    <h2>Bienvenido a Tu abogado Celis</h2>
+                   <h3>En nuestro despacho legal, nos enorgullece ofrecer servicios jurídicos integrales con un enfoque especializado en derechos civiles, penales y familiares. Dedicado a proporcionar asesoramiento legal sólido y eficaz a nuestros clientes.</h3> 
+                </p>
+            </div>
+            
+            <div class="mission-container">
+                <h3>Nuestra Misión</h3>
+                <p>
+                    Empoderamos tu negocio desde el conocimiento jurídico aplicado, usando la experiencia y la innovación para lograrlo.
+                </p>
+            </div>
+            
+            <div class="vision-container">
+                <h3>Nuestra Visión</h3>
+                <p>
+                    En el año 2026, seremos una de las cinco firmas de abogados más reputadas y acreditadas en la ciudad de Bucaramanga, enfocada en prestar servicios de asesoría jurídica integral para medianas y grandes empresas, con presencia en las ciudades de Bucaramanga, Medellín, Bogotá, Barranquilla y Cali, pero con alcance nacional.
+                </p>
+            </div>
+            
+            <div class="specialty-container">
+                <h3>Nuestra Especialidad</h3>
+                <p>
+                    Nuestra especialidad es la prestación de servicios de asesoría jurídica permanente, en la cual, de forma proactiva y reactiva, gestionamos los riesgos jurídicos de su organización empresarial. También contamos con una amplia experiencia en la gestión de asuntos jurídicos puntuales, en diversas áreas del derecho, con lo cual podemos ofrecer diversas soluciones desde el ámbito jurídico.
+                </p>
+            </div>
+            
+        </div>
+      
+    </section>
+    <footer>
+
+        <footer>
+            <div class="enlace">
+                <h3>DEJANOS UN MENSAJE, CON GUSTO ATENDEREMOS
+                    TUS INQUIETUDES
+                </h3>
+                <form action="/procesar_formulario.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="telefono">telefono:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+    
+    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                    <input type="submit" value="Enviar" class="btn-3">
+                </form>
+            </div>
+    
+
+    <div class="ft-container">
+        <div class="enlace">
+            <h3>Siguenos en Nuestras Redes</h3>
+            <img src="/html/proyecto/imgs/facebook.png" alt="facebook">
+            <img src="/html/proyecto/imgs/gorjeo.png" alt="twitter">
+            <img src="/html/proyecto/imgs/logotipo-de-linkedin.png" alt="linkedin">
+            <img src="/html/proyecto/imgs/llamada-telefonica.png" alt="whatsapp">
+        </div>
+
+        <div class="horario">
+            <h3>Horario de Atención</h3>
+            <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+            <p>Sábado: 9:00 AM - 1:00 PM</p>
+            <p>Domingo: Cerrado</p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Todos los derechos reservados - TuAbogadoCelis</p>
+        </div>
+    </div>
+
+</footer>
+    
+        
+</body>
+</html>
+

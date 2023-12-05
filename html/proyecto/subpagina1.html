@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros servicios</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    color: #444;
+    background-color: #ffe4c4;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #7d4706;
+}
+
+.txt-1 {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.group-services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: calc(30% - 20px);
+    margin-bottom: 20px; /* Añadido para espacio entre servicios */
+    border: 6px solid #bda569;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #bda569;
+}
+
+.service-content {
+    padding: 15px;
+}
+
+.service h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.service p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.service:nth-child(odd) {
+    background-color: bisque;
+}
+
+.service:nth-child(even) {
+    background-color: bisque;
+}
+
+/* Media queries para hacer la página responsive */
+
+@media only screen and (max-width: 768px) {
+    .service {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .service {
+        width: 100%;
+    }
+}
+
+        
+    </style>
+</head>
+<body>
+    <main class="services container" id="servicios">
+
+        <h2>Nuestros Servicios</h2>
+        <p class="txt-1">Tenemos mucha experiencia, somos reflexivos en nuestro papel como defensores y estamos comprometidos a responder a lo que nuestros clientes necesitan y exigen.
+
+        </p>
+        <h2>Atendemos su caso de manera inmediata</h2>
+        <div class="group-services">
+            <div class="service">
+                <h2>Derecho civil</h2>
+                <img src="/html/proyecto/imgs/derecho-civil-ejemplos.jpg" alt="derechocivil">
+                <p> Nos encargamos de las relaciones entre personas y entidades privadas, como individuos, en las obligaciones, contratos y sucesiones.  </p>
+            </div>
+            <div class="service">
+                <h2>Derecho de Familia</h2>
+                <img src="/html/proyecto/imgs/6462ac7906aad-por-que-es-importante-el-derecho-de-familia.jpeg" alt="familia">
+               <h3>Alimentos, custodia compartida, separación de bienes y todo lo relacionado con el proceso de divorcio</h3>
+                <p> enfoque especial en la protección de los derechos fundamentales de sus miembros y busca solucionar conflictos de una manera justa y equitativa, considerando siempre el interés superior de los niños y el bienestar de la familia en su conjunto.</p>
+            </div>
+            <div class="service">
+                <h2>Derecho de propiedad</h2>
+                <img src="/html/proyecto/imgs/derecho-a-la-propiedad.jpg" alt="propiedad">
+                <p>Nos ocupamos de los derechos y responsabilidades relacionados con la posesión y el uso de bienes y propiedades. Esto incluye la compra, venta y transferencia de propiedades, así como los derechos de arrendamiento y usufructo.</p>
+            </div>
+            <div class="service">
+                <h2>Derecho penal</h2>
+                <img src="/html/proyecto/imgs/derecho-penal.webp" alt="ley">
+                <h3></h3>
+                <p>Contamos con una gran experiencia en cada una de las ramas del derecho penal. Aplicamos con eficacia las leyes del derecho penal y gracias a nuestras estrategias para la defensa de los casos garantizamos el éxito de los mismos.</p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #borde1{
+            text-align: center;
+            
+            margin: 10px;
+            padding: 10px;
+            border-style: dotted dashed ;
+            border-width: 5px;
+            border-color:green goldenrod red blue; 
+        }
+        #borde2{
+            text-align: center;
+            
+            margin: 10px;
+            padding: 10px;
+            border-style: solid;
+            border-width: 5px 10px;
+            border-color:skyblue black pink ; 
+        }
+        #bordeSolido{
+            text-align: center;
+
+            margin: 2px;
+            border: 2px;
+            padding: 10px;
+            border-style: solid;
+            border-width: 2px ;
+            border-color: black  ; 
+        }
+        main{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<main>
+    <body>
+        <div id="borde1">
+            esta es una caja con diferentes tipos de bordes
+        </div>
+        <div id="borde2">
+            esta es otra caja con diferentes tipos de bordes
+        </div>
+        <div id="borde1">
+            <div id="borde2">
+                esta es una caja con diferentes tipos de bordes dentro de otra caja
+            </div>
+        </div>
+        <div id="bordeSolido">
+            <div id="bordeSolido">
+                <div id="bordeSolido">
+                    <div id="bordeSolido">
+                        <div id="bordeSolido">
+                            <div id="bordeSolido"> 
+                                Estas son cajas dentro de cajas
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</main>
+</html>

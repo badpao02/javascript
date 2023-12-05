@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>tuabogadocelis</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+            text-decoration: none;
+            
+
+        }
+    
+
+    body{
+        background-color: bisque;
+        
+
+    }
+    
+    header{
+        background-image: linear-gradient(rgba(0,0,0.5),rgba(0,0,0,0.5)), url(/html/proyecto/imgs/estado-de-derecho-e1549026224399.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+  
+    }
+
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .menu{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right:0;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1500;
+    }
+    .menu .logo{
+        font-weight: bolder;
+        font-size: 35px;
+        color: rgba(186, 158, 89, 0.663);
+        
+    }
+    .menu-icono{
+        font-size: 45px;
+        max-width: 40%;
+        height: 40%;
+
+    }
+    .menu .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+    }
+  
+    .menu.navbar ul li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: wheat ;
+        display: block;
+    }
+
+    .menu .navbar ul li a:hover{
+        color:rgb(197, 153, 238);
+        text-decoration: none;
+        
+
+    }
+
+    #menu{
+        display: none;
+
+    }
+
+    .menu label{
+        cursor: pointer;
+        display: none;
+
+    }
+    .header-text{
+        text-align: center;
+        width: 900px;
+        font-size: 25px;
+    }
+    .header-text .menu-icono{
+        justify-content: center;
+        width: 900px;
+        margin-top: 150px;
+
+    }
+ 
+    .header-text p{
+        margin-top: 65px;
+        color:rgb(196, 174, 132);
+    }
+    .btn-1 {
+    display: inline-block;
+    background-color: rgb(174, 139, 96);
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 35px;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn-1:hover {
+    background-color: burlywood;
+    color: black; 
+}
+
+    .services {
+    padding: 50px 0px;
+    text-align: center;
+    color: black;
+}
+
+    .services h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+    .txt-1 {
+    font-size: 30px;
+    padding: 30px 200px;
+}
+
+    .group-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .service {
+    width: calc(25% - 20px); 
+    border: 6px solid rgb(189, 165, 105);
+    
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+    .service:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+    .service img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+    .portafolio-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url(/html/proyecto/imgs/lawyers-mediating-disputes-providing-legal-600nw-2183258471.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    color: rgb(0, 0, 0);
+}
+
+.portafolio-txt {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portafolio-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+    color:  rgb(165, 150, 113);
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 30px; 
+    box-shadow: 0 0 20px rgba(29, 24, 24, 0.3); 
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: -40px; 
+}
+
+
+    footer {
+            padding: 50px 0px;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        .enlace {
+            text-align: center;
+            margin-bottom: 20px; 
+            margin-right: 20px;
+        }
+
+
+        .enlace h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .enlace img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease; 
+        }
+
+        .enlace img:hover {
+            transform: scale(1.2); 
+        }
+
+        .enlace form {
+    max-width: 300px; 
+    margin: auto; 
+}
+
+.enlace form label,
+.enlace form input,
+.enlace form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.enlace form .btn-3 {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enlace form .btn-3:hover {
+    background-color: #258cd1;
+}
+
+        .horario {
+            margin-top: 20px;
+            margin-bottom: 20px; 
+        }
+
+        .horario h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .horario p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+            background-color: whitesmoke;
+            color: black;
+            font-size: 14px;
+        }
+
+       
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto;
+    }
+
+    .menu .logo {
+        font-size: 15px;
+    }
+
+    .menu-icono {
+        font-size: 30px;
+    }
+
+    .menu .navbar {
+        
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+       
+        text-align: center;
+            }
+
+    .header-text {
+        width: 60%;
+        font-size: 10px;
+    }
+
+    .header-text .menu-icono {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .header-text p {
+        margin-top: 30px;
+    }
+
+    .btn-1 {
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    .services h2 {
+        font-size: 40px;
+    }
+
+    .txt-1 {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .group-services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .enlace img {
+        width: 20px;
+        margin: 0 5px;
+    }
+
+    .enlace h3 {
+        font-size: 18px;
+    }
+
+    .horario h3,
+    .horario p {
+        font-size: 16px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para pantalla mediana (Tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .menu .logo {
+        font-size: 30px;
+    }
+
+    .menu-icono {
+        font-size: 40px;
+    }
+
+    .menu .navbar ul {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-text {
+        width: 70%;
+        font-size: 22px;
+    }
+
+    .header-text .menu-icono {
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .header-text p {
+        margin-top: 50px;
+    }
+
+    .btn-1 {
+        padding: 15px 30px;
+        margin-top: 30px;
+    }
+
+    .services h2 {
+        font-size: 50px;
+    }
+
+    .txt-1 {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .enlace img {
+        width: 25px;
+        margin: 0 10px;
+    }
+
+    .enlace h3 {
+        font-size: 24px;
+    }
+
+    .horario h3,
+    .horario p {
+        font-size: 18px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantalla grande (Televisor) */
+@media only screen and (min-width: 1025px) {
+    .menu .logo {
+        font-size: 35px;
+    }
+
+    .menu-icono {
+        font-size: 45px;
+    }
+
+    .menu .navbar ul {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .header-text {
+        width: 900px;
+        font-size: 25px;
+    }
+
+    .header-text .menu-icono {
+        width: 900px;
+        margin-top: 150px;
+    }
+
+    .header-text p {
+        margin-top: 65px;
+    }
+
+    .btn-1 {
+        padding: 15px 25px;
+        margin-top: 35px;
+    }
+
+    .services h2 {
+        font-size: 55px;
+    }
+
+    .txt-1 {
+        padding: 30px 200px;
+        font-size: 30px;
+    }
+
+    .enlace img {
+        width: 30px;
+        margin: 0 10px;
+    }
+
+    .enlace h3 {
+        font-size: 20px;
+    }
+
+    .horario h3,
+    .horario p {
+        font-size: 20px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+}
+    
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="menu container">
+            <p class="logo">Menu</p>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+            </label>
+            <nav class="navbar">
+                
+                <ul>
+                    <li><a href="/html/proyecto/proyecto.html">Inicio</a></li>
+                    <li><a href="/html/proyecto/subpagina1.html">Servicios</a></li>
+                    <li><a href="/html/proyecto/subpagina2.html">Sobre Nosotros</a></li>
+                    <li><a href="/html/proyecto/subpagina3.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-text" id="Inicio">
+            <img class="menu-icono" src="/html/proyecto/imgs/image-removebg-preview.png" alt="logo">
+            <p>Somos una firma jurídica especializada en asesorias legales, con un importante reconocimiento y prestigio a nivel nacional, que incluye en su portafolio asuntos en Derecho Corporativo y Empresarial, Protección al Patrimonio Económico Individual y Colectivo, Gestión Especializada en Cartera y Defensa Jurídica en Asuntos de Alto Impacto; con sede principal en la ciudad de Bucaramanga y sus alrededores.
+
+            </p>
+            <a href="#" class="btn-1"><h3>Contacta Con Nosotros</h3></a>
+       </div>
+    </header>
+
+    <main class="services container" id="servicios">
+
+        <h2>Expertos En:</h2>
+
+        <div class="group-services">
+            <div class="service">
+                <h3>Derecho civil</h3>
+                <img src="/html/proyecto/imgs/derecho-civil.png" alt="derechocivil">      
+            </div>
+
+            <div class="service">
+                <h3>Derecho de Familia</h3>
+                <img src="/html/proyecto/imgs/familia.png" alt="familia">    
+            </div>
+
+            <div class="service">
+                <h3>Derecho de propiedad</h3>
+                <img src="/html/proyecto/imgs/propiedad.png" alt="propiedad">     
+            </div>
+
+            <div class="service">
+                <h3>Derecho penal</h3>
+                <img src="/html/proyecto/imgs/ley.png" alt="ley">
+            </div>
+        </div>
+    </main>
+    <section class="portafolio-container" id="nosotros">
+
+        <div class="portafolio-txt">
+            <h2>Te escuchamos</h2>
+            
+            <div class="img-container">
+                <img src="/html/proyecto/imgs/lawyers-mediating-disputes-providing-legal-600nw-2183258471.webp" alt="abogados">
+            </div>
+            
+            <div class="text-container">
+                <p>
+                    <h2>Bienvenido a Tu abogado Celis</h2>
+                   <h3>Escuchamos tus problemas y te daremos las mejores soluciones  juridicas.
+                    creemos que el derecho tiene que estar al alcance de todos, por eso nuestros excelentes servicios. 
+                   </h3> 
+                </p>
+            </div>
+      
+    </section>
+    <main class="services container" id="servicios">
+
+        <h2>Tienes cita con Nosotros?</h2>
+        <h3><strong>Selecciona el formato Correspondiente</strong></h3>
+
+        <a href="#" class="btn-1"><h3>Persona natural</h3></a>
+        <p></p>
+        <p></p>
+        
+        <a href="#" class="btn-1"><h3>Persona Juridica o Comercial</h3></a>
+    </main>
+
+        <footer>
+        
+
+    <div class="ft-container">
+        <div class="enlace">
+            <h3>Siguenos en Nuestras Redes</h3>
+            <img src="/html/proyecto/imgs/facebook.png" alt="facebook">
+            <img src="/html/proyecto/imgs/gorjeo.png" alt="twitter">
+            <img src="/html/proyecto/imgs/logotipo-de-linkedin.png" alt="linkedin">
+            <img src="/html/proyecto/imgs/llamada-telefonica.png" alt="whatsapp">
+        </div>
+
+        <div class="horario">
+            <h3>Horario de Atención</h3>
+            <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+            <p>Sábado: 9:00 AM - 1:00 PM</p>
+            <p>Domingo: Cerrado</p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Todos los derechos reservados - TuAbogadoCelis</p>
+        </div>
+    </div>
+
+</footer>
+    
+        
+</body>
+</html>
+
