@@ -20,7 +20,7 @@ async function doTask(iterations) {
   (async () => {
     try {
       const result = await doTask(10);
-      console.log(result); // { error: false, value: [...] }sddfsdfaf
+      console.log(result); // { error: false, value: [...] }sddfsdfaf nvmv
     } catch (error) {
       console.error(error); // { error: true, iter: ..., message: ... }
     }
