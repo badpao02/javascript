@@ -16,6 +16,8 @@ const datos = [
     },
 ];
 
+
+
 //1.sincrono
 
 //const getDatos = () => {
@@ -45,6 +47,15 @@ const getDatos = () => {
 })
 }
 
-getDatos()
-.then((datos) => { console.table(datos)})
-.catch((err) =>{ console.error(Err. message)})
+//getDatos()
+//.then((datos) => { console.table(datos)})
+//.catch((err) =>{ console.error(Err. message)})
+
+async function obtenerDatos(){
+    try{
+        const datosObtenidos = await getDatos();
+        console.table(datosObtenidos);
+    }catch (error){
+        console.error(error.message);
+    }
+}
