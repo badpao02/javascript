@@ -78,11 +78,11 @@
             imgElement2.src = pokemonData2.sprites.front_default;
 
             boxElement.appendChild(imgElement1);
-            boxElement.appendChild(document.createElement("br"));
+            boxElement.appendChild(document.createElement("vs"));
             boxElement.appendChild(document.createTextNode(`#${pokemonId1} - ${pokemonData1.name}`));
-            boxElement.appendChild(document.createElement("br"));
+            boxElement.appendChild(document.createElement("vs"));
             boxElement.appendChild(imgElement2);
-            boxElement.appendChild(document.createElement("br"));
+            boxElement.appendChild(document.createElement("vs"));
             boxElement.appendChild(document.createTextNode(`#${pokemonId2} - ${pokemonData2.name}`));
 
             pokemonListElement.appendChild(boxElement);
