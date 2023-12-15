@@ -24,6 +24,8 @@
     padding: 15px 25px;
     border-radius: 35px;
     color: black;
+    justify-content: space-between;
+
 }
 
     </style>
@@ -35,7 +37,7 @@
 
     <h1>EL CLUB DE LA PELEA POKEMON</h1>
     
-    <a href="#" class="btn-1"><h3>MIPOKEMON</h3> vs</a>
+    <a href="#" class="btn-1"><h3>MIPOKEMON</h3> vs</a>    <a href="#" class="btn-1"><h3>CPU Pokemon</h3> vs</a>
 
     
     
@@ -47,7 +49,7 @@
         document.addEventListener("DOMContentLoaded", () => {
     const pokemonListElement = document.getElementById("pokemonList");
 
-    const getRandomPokemonId = () => Math.floor(Math.random() * 1000) + 1;
+    const getRandomPokemonId = () => Math.floor(Math.random() * 300) + 1;
 
     const fetchPokemonData = async (pokemonId) => {
         try {
