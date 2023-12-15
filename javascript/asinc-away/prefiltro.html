@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon List</title>
+    <style>
+    #pokemonList {
+    display: flex;
+    flex-wrap: wrap;    
+
+}
+
+.pokemonBox {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.btn-1 {
+    display: inline-block;
+    background-color: lightseagreen;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 35px;
+    color: black;
+}
+
+    </style>
+  
+
+
+</head>
+<body>
+
+    <h1>EL CLUB DE LA PELEA POKEMON</h1>
+    
+    <a href="#" class="btn-1"><h3>MIPOKEMON</h3> vs</a>
+
+    
+    
+
+    <div id="pokemonList"></div>
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const pokemonListElement = document.getElementById("pokemonList");
+
+    const getRandomPokemonId = () => Math.floor(Math.random() * 1000) + 1;
+
+    const fetchPokemonData = async (pokemonId) => {
+        try {
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error("pokemon no valido", error);
+            return null;
+        }
+    };
+
+    const createPokemonBox = async () => {
+        const pokemonId1 = getRandomPokemonId();
+        const pokemonId2 = getRandomPokemonId();
+
+        const pokemonData1 = await fetchPokemonData(pokemonId1);
+        const pokemonData2 = await fetchPokemonData(pokemonId2);
+
+        if (pokemonData1 && pokemonData2) {
+            const boxElement = document.createElement("div");
+            boxElement.classList.add("pokemonBox");
+
+            const imgElement1 = document.createElement("img");
+            imgElement1.src = pokemonData1.sprites.front_default;
+
+            const imgElement2 = document.createElement("img");
+            imgElement2.src = pokemonData2.sprites.front_default;
+
+            boxElement.appendChild(imgElement1);
+            boxElement.appendChild(document.createElement("br"));
+            boxElement.appendChild(document.createTextNode(`#${pokemonId1} - ${pokemonData1.name}`));
+            boxElement.appendChild(document.createElement("br"));
+            boxElement.appendChild(imgElement2);
+            boxElement.appendChild(document.createElement("br"));
+            boxElement.appendChild(document.createTextNode(`#${pokemonId2} - ${pokemonData2.name}`));
+
+            pokemonListElement.appendChild(boxElement);
+        } else {
+          
+            createPokemonBox();
+        }
+    };
+
+    const generatePokemonList = (numPairs) => {
+        for (let i = 0; i < numPairs; i++) {
+            createPokemonBox();
+        }
+    };
+
+    
+    generatePokemonList(10);
+});
+    </script>
+
+<a href="#" class="btn-1"><h3>FIGHT</h3></a>
+
+</body>
+</html>
